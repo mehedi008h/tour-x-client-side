@@ -8,7 +8,6 @@ It's a simple Tourisom Website.Which build on React Js, Html , CSS, Bootstrap, N
 
 ## Main Point 
 <ul>
-    <li>You can Choose Destanitaion</li>
 </ul>
     <ul>
         <li>You can Choose Destanitaion</li>
