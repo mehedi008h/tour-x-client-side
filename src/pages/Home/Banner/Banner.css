@@ -1,11 +1,10 @@
 .banner {
-    /* background-image: url(../../../image/banner.jpg); */
+    background-image: url(../../../image/banner.jpg);
     height: 500px;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    background-color: maroon;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .banner-text {
-    margin-top: 100px;
+    margin-top: 130px;
     font-family: 'Poppins', sans-serif;
 }

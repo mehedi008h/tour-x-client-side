@@ -10,7 +10,7 @@ const Footer = () => {
                         <div className="w-75 mx-auto">
                             <img className="w-25" src="" alt="" />
                             <div className="mt-3">
-                                <h3 className="text-white">Skypro Medicare</h3>
+                                <h3 className="text-white">Skypro TourX</h3>
                                 <p className="text-success">We provide best Doctors</p>
                             </div>
                         </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <p className="text-white">&copy; Skypro Medicare 2021 | All Rights Reserved</p>
+                    <p className="text-white">&copy; Skypro TourX 2021 | All Rights Reserved</p>
                 </div>
             </div>
         </div>

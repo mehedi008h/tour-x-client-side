@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Booking from '../Booking/Booking';
+import useAuth from '../../../../hooks/useAuth';
+import Booking from './Booking';
 
-const ManageOrder = () => {
+const MyBooking = () => {
+    const { user } = useAuth();
     const [booking, setBooking] = useState([]);
     console.log(booking);
 
@@ -13,12 +15,11 @@ const ManageOrder = () => {
     return (
         <div>
             <div className="container" style={{ marginTop: 100 }}>
-                <h3 className="text-center fw-bold">Manage All Booking</h3>
+                <h3 className="text-center fw-bold">My Booking</h3>
                 <div className="row">
                     {
-                        booking.map(item => <div className="col-md-4">
+                        booking.filter((mybooking) => mybooking.email == user.email).map(item => <div className="col-md-4">
                             <Booking
-                                key={item._id}
                                 item={item}
                             ></Booking>
                         </div>)
@@ -29,4 +30,4 @@ const ManageOrder = () => {
     );
 };
 
-export default ManageOrder;
+export default MyBooking;

@@ -13,15 +13,36 @@ const Review = () => {
                     <div className="row g-3">
                         <div className="col-md-3">
                             <div className="item rounded-5 shadow p-3 text-center">
-                                <img src="" alt="" />
+                                <img src="https://i.ibb.co/f2vmtQg/pexels-andrea-piacquadio-3778527.jpg" alt="" />
                                 <h4 className="mt-3 text-success">Jahid Hasan</h4>
                                 <h5>Traveller</h5>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae aliquam suscipit neque rerum cupiditate quos dignissimos, </p>
+                                <p>“I am happy to be one of the early buyers, the founder's are just amazing 👏.”</p>
                             </div>
                         </div>
-                        <div className="col-md-3"></div>
-                        <div className="col-md-3"></div>
-                        <div className="col-md-3"></div>
+                        <div className="col-md-3">
+                            <div className="item rounded-5 shadow p-3 text-center">
+                                <img src="https://i.ibb.co/SV85FH6/pexels-chloe-1043473.jpg" alt="" />
+                                <h4 className="mt-3 text-success">Tashan Khan</h4>
+                                <h5>Traveller</h5>
+                                <p>“I am happy to be one of the early buyers, the founder's are just amazing 👏.”</p>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div className="item rounded-5 shadow p-3 text-center">
+                                <img src="https://i.ibb.co/jZVxXzM/pexels-linkedin-sales-navigator-2182970.jpg" alt="" />
+                                <h4 className="mt-3 text-success">Imran Khan</h4>
+                                <h5>Traveller</h5>
+                                <p>“I am happy to be one of the early buyers, the founder's are just amazing 👏.”</p>
+                            </div>
+                        </div>
+                        <div className="col-md-3">
+                            <div className="item rounded-5 shadow p-3 text-center">
+                                <img src="https://i.ibb.co/SV85FH6/pexels-chloe-1043473.jpg" alt="" />
+                                <h4 className="mt-3 text-success">Jahid Hasan</h4>
+                                <h5>Traveller</h5>
+                                <p>“I am happy to be one of the early buyers, the founder's are just amazing 👏.”</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

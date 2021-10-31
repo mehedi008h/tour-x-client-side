@@ -1,0 +1,11 @@
+.choose-info {
+    font-family: 'Poppins', sans-serif;
+}
+.choose-item{
+    background-color: darkkhaki;
+    color: white;
+}
+.choose-item img {
+    height: 80px;
+    width: 80px;
+}

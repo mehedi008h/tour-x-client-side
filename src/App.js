@@ -4,8 +4,11 @@ import AuthProvider from './context/AuthProvider';
 import Home from './pages/Home/Home/Home';
 import AddService from './pages/Home/Profile/AddService/AddService';
 import ManageOrder from './pages/Home/Profile/ManageOrder/ManageOrder';
+import MyBooking from './pages/Home/Profile/MyBooking/MyBooking';
+import PlaceService from './pages/Home/Services/PlaceService';
 import ServiceDetails from './pages/Home/Services/ServiceDetails';
 import Login from './pages/Login/Login';
+import PrivateRouter from './pages/Login/PrivateRouter';
 import NotFound from './pages/NotFound/NotFound';
 import Footer from './pages/Shared/Footer/Footer';
 import Header from './pages/Shared/Header/Header';
@@ -23,15 +26,21 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/service-details/:id">
+            <PrivateRouter path="/service-details/:id">
               <ServiceDetails></ServiceDetails>
-            </Route>
-            <Route path="/add-service">
+            </PrivateRouter>
+            <PrivateRouter path="/place-service/:id">
+              <PlaceService></PlaceService>
+            </PrivateRouter>
+            <PrivateRouter path="/add-service">
               <AddService></AddService>
-            </Route>
-            <Route path="/manage-order">
+            </PrivateRouter>
+            <PrivateRouter path="/manage-order">
               <ManageOrder></ManageOrder>
-            </Route>
+            </PrivateRouter>
+            <PrivateRouter path="/my-booking">
+              <MyBooking></MyBooking>
+            </PrivateRouter>
             <Route path="/login">
               <Login></Login>
             </Route>

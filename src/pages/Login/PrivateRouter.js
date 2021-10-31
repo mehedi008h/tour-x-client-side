@@ -3,7 +3,7 @@ import { Spinner } from 'react-bootstrap';
 import { Redirect, Route } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
-const privateRouter = ({ children, ...rest }) => {
+const PrivateRouter = ({ children, ...rest }) => {
     const { user, isLoading } = useAuth();
     if (isLoading) {
         return <Spinner animation="border" variant="danger" />
@@ -25,4 +25,5 @@ const privateRouter = ({ children, ...rest }) => {
     );
 };
 
-export default privateRouter;
+
+export default PrivateRouter;
