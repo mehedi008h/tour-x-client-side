@@ -1,0 +1,23 @@
+.review {
+    background-color: whitesmoke;
+}
+.review-text {
+    font-family: 'Poppins', sans-serif;
+}
+.item {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border-radius: 30px 30px 5px 5px;
+}
+.item img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: auto;
+    
+}
+.item:hover{
+    background-color: #0e101c;
+    color: white;
+}

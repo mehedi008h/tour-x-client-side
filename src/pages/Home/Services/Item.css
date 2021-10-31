@@ -1,0 +1,27 @@
+.service {
+    font-family: 'Poppins', sans-serif;
+    background-color: wheat;
+    border-radius: 20px 20px 5px 5px;
+}
+.service:hover {
+    background-color: rgb(0, 30, 60);
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.service-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.location {
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(231, 140, 140);
+    border-radius:15px;
+    border: 2px solid red;
+    cursor: none;
+    color: black;
+}
+.service-info {
+    font-family: 'Poppins', sans-serif;
+}
