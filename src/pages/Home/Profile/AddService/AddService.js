@@ -8,7 +8,7 @@ const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/service', data)
+        axios.post('https://howling-catacombs-44172.herokuapp.com/service', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {
@@ -25,7 +25,7 @@ const AddService = () => {
     };
     return (
         <div>
-            <div className="container mt-5">
+            <div className="container mt-5 mb-5">
                 <div className="card add-service p-3 shadow rounded w-50 mx-auto">
                     <h3 className="text-center">Add Service</h3>
                     <form className="d-flex flex-column mt-3" onSubmit={handleSubmit(onSubmit)}>

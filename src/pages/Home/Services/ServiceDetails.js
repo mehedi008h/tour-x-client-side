@@ -7,7 +7,7 @@ const ServiceDetails = () => {
     const [serviceDetails, setServiceDetails] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/service-details/${id}`)
+        fetch(`https://howling-catacombs-44172.herokuapp.com/service-details/${id}`)
             .then(res => res.json())
             .then(data => setServiceDetails(data));
     }, [])

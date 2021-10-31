@@ -16,7 +16,7 @@ const Booking = (props) => {
         })
             .then((willDelete) => {
                 if (willDelete) {
-                    const url = `http://localhost:5000/booking/${id}`;
+                    const url = `https://howling-catacombs-44172.herokuapp.com/booking/${id}`;
                     fetch(url, {
                         method: 'DELETE'
                     })

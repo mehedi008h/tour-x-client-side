@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router';
+import { useHistory, useParams } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
@@ -13,7 +13,7 @@ const PlaceService = () => {
     const { title, location } = service;
     const { register, handleSubmit, reset } = useForm();
     useEffect(() => {
-        const url = `http://localhost:5000/service-details/${id}`;
+        const url = `https://howling-catacombs-44172.herokuapp.com/service-details/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setService(data));
@@ -21,7 +21,7 @@ const PlaceService = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/booking', data)
+        axios.post('https://howling-catacombs-44172.herokuapp.com/booking', data)
             .then(res => {
                 console.log(res);
                 if (res.data.insertedId) {
@@ -29,7 +29,7 @@ const PlaceService = () => {
                     // setBlog(remainingBlog);
                     swal({
                         title: "Good job!",
-                        text: "Your Service added Successfully!",
+                        text: "Your Booking Placed Successfully!",
                         icon: "success",
                     });
                     reset();
@@ -42,8 +42,8 @@ const PlaceService = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-5 col-offset-7 mx-auto mt-5 mb-5">
-                        <div className="card p-3">
-                            <h3>{service.title}</h3>
+                        <div className="card mt-5 p-3">
+                            <h3 className="text-center">Place Booking</h3>
                             <form className="d-flex flex-column mt-3" onSubmit={handleSubmit(onSubmit)}>
                                 {/* register your input into the hook by invoking the "register" function */}
                                 <input type="text" value={user.displayName || ''} {...register("name",)} placeholder="Enter location " className="mb-2 ps-3 input" />

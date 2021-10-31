@@ -6,7 +6,7 @@ const ManageOrder = () => {
     console.log(booking);
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('https://howling-catacombs-44172.herokuapp.com/booking')
             .then(res => res.json())
             .then(data => setBooking(data));
     }, []);
